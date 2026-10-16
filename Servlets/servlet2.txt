@@ -1,0 +1,121 @@
+Web application and Web resource program execution 
+==================================================
+Java application executes manually.
+
+Web application and web resource program will execute at the time when they have requested.
+
+Diagram: servlet2.1
+
+1) Enduser gives the request to web resource program.
+
+2) Web server traps that request and passes that request to appropriate web resource program.
+
+3) Web resource program executes the logic to process the request.
+
+4) Web resource program communicates with database software if necessary.
+
+5) Web server gives the output to web server.
+
+6) Web server sends the output to browser window as dynamic web page.
+
+Note:
+-----
+The process of keeping the web application in a server is called deployment 
+and reverse is called undeployment.
+
+
+Web Server 
+==========
+It is a combination of software and hardware that is used to store, process and generate 
+dynamic content like images, audio, video, text and etc.
+
+It is used to automate whole process of web application and web resource program execution.
+
+ex:
+	Nginx
+	Apache Tomcat 
+	and etc.
+
+Resposibilities of a web server 
+-------------------------------
+1) It takes contineous requests from client.
+
+2) It traps the request and passes the request to appropriate web resource program.
+
+3) It provides environment to deploy and undeploy the web applications.
+
+4) It allows client side web resource programs to execute in a browser window.
+
+5) It adds middleware services only to deployed web applications.
+
+6) It takes the result/output from web resource program and sends to browser window as 
+   dynamic response. 
+
+7) It is used to automate whole process of web application and web resource program execution.
+
+Note:
+-----
+	To execute java program we required JRE/JVM.
+	To execute applet we required applet container/engine.	
+	To execute servlet program we required servlet container.
+
+
+Web Container 
+=============
+It is a software application or a program that is used to manage whole life cycle of 
+web resource program i.e from birth to death.
+
+Servlet container manages whole life cycle of servlet program.
+
+JSP container manages whole life cycle of jsp program.
+
+Some part of industry considers servelt container and JSP container are web containers.
+
+Every server is designed to support servlet container and JSP container.
+
+
+Tomcat 
+=======
+Type			:	Application Server
+
+Version			:	Tomcat 9
+
+Vendor			:	The ASF(Apache Software Foundation)
+
+Website			:	https://tomcat.apache.org
+
+Port No			:	8080 (2525)
+
+Servlet container	:	catalina 
+
+Jsp container		:	jasper 
+
+Download link		:
+
+https://drive.google.com/file/d/1u547booDvVY630rN4drEQ8c8lU0In7T6/view?usp=drive_link
+
+
+
+Tomcat installation 
+==================
+double click on Tomcat server --> yes --> Next --> I Agree --> select Full -->
+next --> adminstrator login username : admin 
+	                    password : admin  --> Next --> Next --> Install.
+
+
+Steps to setup Tomcat server to manual mode
+============================================
+services --> select Apache Tomcat --> click to stop link ---> double click to Apache Tomcat --> startup type : manual --> apply --> ok.
+
+
+
+
+
+
+
+
+
+
+
+
+
