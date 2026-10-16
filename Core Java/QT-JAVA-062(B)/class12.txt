@@ -1,0 +1,150 @@
+Var-arg method
+==============
+Untill 1.4 version, it is not possible to declare a method with variable number of arguments. But from 1.5 version onwards it is possible to declare a method with variable number of arguments.
+
+We can declare var-arg method as follow.
+ex:
+                        var-arg parameter 
+			 |
+		       --------
+	void methodOne(int... i)
+			   |
+			ellipse 
+
+	Here var-arg parameter is a replacement of single dimensional array.
+	ex:
+		...   --> []
+
+We can invoke var-arg method with any number of integer value including zero. 
+
+ex:
+---
+class Test 
+{
+	public static void main(String[] args)
+	{
+		methodOne();
+		methodOne(10);
+		methodOne(10,20);
+		methodOne(10,20,30);
+		
+	}	
+	public static void methodOne(int... i)
+	{
+		System.out.println("var-arg method");
+	}
+}
+
+In realtime we will use var-arg method when number of inputs are not fixed to a method.
+
+ex:
+---
+class Zomato
+{
+	public static void main(String[] args)
+	{
+		//bookOrders("Biryani");
+		bookOrders("Burgur","Pizza");
+	}
+	public static void bookOrders(String... items)
+	{
+		//System.out.println(items[0]);
+		System.out.println(items[0]+" "+items[1]);
+	}
+}
+
+case1:
+------
+	We can mix var-arg parameter with general parameters.
+	ex:
+		void methodOne(int i,int... j)
+
+case2:
+-----
+	If we mix var-arg parameter with general parameters then var-arg parameter 
+	must be last parameter.
+	ex:	
+		void methodOne(int i,int... j)
+		void methodOne(int... i,int j) //invalid
+
+case3:
+-----
+	A var-arg method can have only one var-arg parameter.
+	ex:
+		void methodOne(int... i)
+		void methodOne(int... i,int... j) //invalid
+
+
+Java Source File Structure 
+==========================
+case1:
+------
+	A java program can have multiple classes.	
+
+
+case2:
+------
+	If a java program contains multiple classes then we need to check 
+	which class contains main method and that class treated as main class.
+	ex:
+		Student.java
+		-------------
+		class Recording 
+		{
+			String source="LMS";
+		}
+		class Student
+		{
+			public static void main(String[] args)
+			{
+				Recording r = new Recording();
+				System.out.println(r.source);
+			}
+		}
+		If we compile above program we will get two .class files i.e 
+		Recording.class and Student.class.
+
+case3:
+------
+	If a java program contains multiple class with main method then atleast 
+	one class we need to declare as public and that public class treated as 
+	main class.
+	ex:
+		A.java
+		---------
+		public class A 
+		{
+			public static void main(String[] args)
+			{
+				System.out.println("A-class");
+			}
+		}
+		class B
+		{
+			public static void main(String[] args)
+			{
+				System.out.println("B-class");
+			}
+		}
+		IF we compile above program we will get two .class files i.e 
+		A.class and B.class.
+
+		To execute above program we need to use below commands.
+		ex:
+			java  A 
+			java  B 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

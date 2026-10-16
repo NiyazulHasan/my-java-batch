@@ -1,0 +1,136 @@
+Q) Is java purely object oriented or not?
+
+No, java will not consider as purely object oriented programming language because it does not support many OOPS concepts like multiple inheritance, operator overloading and more ever we depends upon primitive datatypes which are non-objects.
+
+
+Fully Qualified Name 
+====================
+Sometimes we will declare a class or interface along with package name such concept is called fully qualified name.
+ex:
+	java.io.File(C)
+	java.util.Iterator(I)
+
+Fully qualified name improves readability of our code.
+
+ex:
+---
+class Test
+{
+	public static void main(String[] args)
+	{
+		java.util.Date d = new java.util.Date();
+		System.out.println(d); 
+	}
+}
+
+Note:
+-----
+	We will use fully qualified name when a class or interface present 
+	in two different packages and we required both the classes or interfaces.
+	ex:
+		java.util.Date
+		java.sql.Date
+
+
+Import statements 
+=================
+A import keyword makes other classes and interface to visibility in our current class.
+
+Whenever we use import statement we should not use fully qualified name.
+
+We have three types of import statements in java.
+
+1) Explicit class import 
+
+2) Implicit class import 
+
+3) Static import 
+
+
+1) Explicit class import
+------------------------
+This type of import statement is highly recommanded to use because it improves readability of our code.
+
+ex:
+---
+import java.time.LocalDate;
+import java.time.LocalTime;
+class Test
+{
+	public static void main(String[] args)
+	{
+		LocalDate date = LocalDate.now();
+		System.out.println(date);
+
+		LocalTime time = LocalTime.now();
+		System.out.println(time);
+	}
+}
+
+2) Implicit class import
+------------------------
+This type of import statement is not recommanded to use because it will reduce readability of our code.
+
+ex:
+---
+import java.time.*;
+class Test
+{
+	public static void main(String[] args)
+	{
+		LocalDate date = LocalDate.now();
+		System.out.println(date);
+
+		LocalTime time = LocalTime.now();
+		System.out.println(time);
+
+		LocalDateTime ldt = LocalDateTime.now();
+		System.out.println(ldt);
+	}
+}
+
+3) Static import 
+-----------------
+Using static import we can call static members (static variable and static method) directly.
+
+Often use of static import makes our program complex and unreadable.
+
+ex:
+---
+import static java.lang.System.*;
+class Test
+{
+	public static void main(String[] args)
+	{
+		out.println("stmt1");
+		out.println("stmt2");
+		out.println("stmt3");
+	}
+}
+
+ex:
+---
+import static java.lang.System.*;
+class Test
+{
+	public static void main(String[] args)
+	{
+		out.println("stmt1");
+		exit(0);
+		out.println("stmt3");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

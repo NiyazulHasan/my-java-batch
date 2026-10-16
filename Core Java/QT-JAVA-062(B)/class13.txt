@@ -1,0 +1,105 @@
+System.out.println()
+====================
+It is a output statement in java.
+
+Whenever we want to display any userdefined statements or data or expression then we need to use output statement in java.
+
+syntax:
+------
+	static variable 
+		|
+	System.out.println();		
+	|		|	
+predefined final 	predefined method
+class 
+
+Diagram: class13.1
+
+ex:
+---
+class Test
+{
+	public static void main(String[] args)
+	{
+		System.out.print("ihub");
+		System.out.print("talent");
+	}
+}
+o/p:
+	ihubtalent
+
+ex:
+---
+class Test
+{
+	public static void main(String[] args)
+	{
+		System.out.println("ihub");
+		System.out.println("talent");
+	}
+}
+o/p:
+	ihub
+	talent 
+
+ex:
+---
+class Test
+{
+	public static void main(String[] args)
+	{
+		double d = 10.12345678d;
+		System.out.printf("%.2f",d); 
+	}
+}
+
+Various ways to print the data in java
+--------------------------------------
+1) custom message
+   ex:
+	System.out.println("Hello World");
+
+
+2) int i = 10;
+   ex:
+	System.out.println(i);
+	System.out.println("The value is = "+i);		
+	System.out.println(i+" is the value");
+
+3) int i = 10, j = 20;
+   ex:
+	System.out.println(i+" "+j);//10  20
+	System.out.println(i+" and "+j); // 10 and 20
+
+4) int i=1,j=2,k=3;
+   ex:
+	System.out.println(i+" "+j+" "+k);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

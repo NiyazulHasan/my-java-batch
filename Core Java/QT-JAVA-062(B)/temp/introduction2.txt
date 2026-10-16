@@ -1,0 +1,59 @@
+Q) What is the difference between Python and Java?
+
+Python					Java
+-------					-----
+It is developed by Guido Van Rossum.	It is developed by James Gosling.
+
+It is a product of Microsoft.		It is a product of Oracle Corporation.
+
+It is a scripting language.		It is a non-scripting language. 
+
+It is a interpreted language.		It is a compiled language.
+
+It contains PVM.			It contains JVM.
+(Python Virtual Machine)		(Java Virtual Machine)
+
+It is a dynamically typed language.	It is a statically typed language.
+
+It is best for AI, ML, DS, Automation	It is best for Enterprise app, Distributed
+Testing.				app, ERP app, banking app and etc.
+
+Performance is low.			Performance is high.
+
+There is less security.			It is highly secured.
+
+
+
+
+	.py file ----------------------------- Machine 
+(High level code)
+
+			compiler 
+	.java file ------------------- .class file --------------> Machine 
+(High level code)			(byte code)
+
+Types of IT companies 
+=====================
+Mainly we have two types of It companies.
+
+1) Service Based Company
+------------------------
+	Cognizent, TCS, Capgemini and etc.
+
+2) Product Based Company 
+------------------------
+	Oracle Corporation, Microsoft, IBM and etc.
+
+	
+
+
+
+
+
+
+
+
+
+
+
+

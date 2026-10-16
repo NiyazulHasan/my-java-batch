@@ -1,0 +1,93 @@
+Q) Difference between C++ and Java?
+
+C++					Java
+-----					------
+It is developed by Bjarne Stroustrup.	It is developed by James Gosling.
+
+It is a partial object oriented 	It is a purely object oriented 
+programming language.			programming language.
+
+It is platform dependent.		It is platform independent.
+
+Memory allocation and deallocation 	Memory allocation and deallocation 
+will taken care by a programmer.	will taken care by a JVM.
+
+It supports multiple inheritance.	It does not support multiple inheritance.
+
+It supports pointers.			It does not support pointers.
+
+It supports goto statement.		It does not support goto statement.
+
+It supports operator overloading.	It does not support operator overloading.	
+It supports preprocessor directory(#).	It does not support preprocessor directory.
+
+It contains three access specifiers i.e	It contains four access modifiers i.e 
+public, private and protected.		default,public,private and protected.
+
+It contains three loops i.e do while	It contains four loops i.e do while loop, 
+loop, while loop and for loop.		while loop, for loop and for each loop.
+
+To save the program we will use 	To save the program we will use 
+.cpp extension.				.java extension.
+
+
+
+
+Interview Question 
+---------------
+Q) Can we execute if and else simultenously?
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	if(0)
+	{
+		label1 : cout<<"If Stmt";
+		goto label2;
+	}
+	else
+	{
+		goto label1;
+		label2 : cout<<"Else Stmt";
+	}
+	getch();
+}
+
+AI 
+===
+AI stands for Artificial Intelligence.
+
+AI is a capability of a computer or a system to mimic or simulate human behaviours.
+ex:
+	Thinking 
+	Reasioning 
+	Language understanding 
+	perception 
+	and etc.
+
+We have two types of AI.
+
+1) Weak AI 
+----------
+	It is applicable for narrow areas.
+	ex:	
+		ChatGPT
+		Google Maps 
+		Alexa/Siri
+		and etc.
+
+2) Strong AI 
+------------
+	It is applicable for multiple tasks.
+	ex:
+		Not Yet Achieved.
+
+
+
+
+
+
+
+
